@@ -1,0 +1,60 @@
+---
+title: "Untitled" 
+date: today
+embed-resources: true # important!
+format: html
+execute: 
+  echo: false
+editor_options: 
+  chunk_output_type: console
+bibliography: references.bib
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+
+2 + 2
+
+3 + 3
+
+4 + 4
+
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed). I made a mistace. 
+
+## Olympic Sports I've Watched
+
+-   Cycling
+-   Basketball
+-   Track and Field
+
+```{r}
+library(tidyverse)
+
+storms |>
+  ggplot(mapping = aes(x = pressure, y = wind)) +
+  geom_point()
+
+
+```
+
+"Tidy data" addresses this issue of data... [@wickham2014]
+
+@wickham2014 revolutionized data analysis in R...
+
